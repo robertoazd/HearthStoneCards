@@ -1,6 +1,7 @@
 package com.robertoazeredo.hearthstonecardsgit.di
 
 import com.robertoazeredo.hearthstonecardsgit.BuildConfig
+import com.robertoazeredo.hearthstonecardsgit.data.api.CardSetApi
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
@@ -60,5 +61,13 @@ object RetrofitModule {
             .client(okHttpClient)
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
+    }
+
+    @Singleton
+    @Provides
+    fun provideCardSetApi(
+        retrofit: Retrofit
+    ): CardSetApi {
+        return retrofit.create(CardSetApi::class.java)
     }
 }
