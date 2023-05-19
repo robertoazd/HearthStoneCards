@@ -61,12 +61,4 @@ object RetrofitModule {
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
     }
-
-    @Singleton
-    @Provides
-    fun provideCardSetApi(
-        retrofit: Retrofit
-    ): CardSetApi {
-        return retrofit.create(CardSetApi::class.java)
-    }
 }
