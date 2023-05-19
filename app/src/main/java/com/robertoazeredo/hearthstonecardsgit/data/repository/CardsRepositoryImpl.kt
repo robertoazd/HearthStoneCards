@@ -10,7 +10,7 @@ import javax.inject.Inject
 class CardsRepositoryImpl @Inject constructor(
     private val cardSetApi: CardSetApi
 ) : CardsRepository {
-    
+
     override suspend fun getCards(): ResultApi<List<CardResponse>> {
         return withContext(Dispatchers.IO) {
             try {
