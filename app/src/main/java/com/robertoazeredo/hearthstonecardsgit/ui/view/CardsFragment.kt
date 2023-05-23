@@ -5,17 +5,21 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.robertoazeredo.hearthstonecardsgit.R
+import com.robertoazeredo.hearthstonecardsgit.databinding.FragmentCardsBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class CardsFragment : Fragment() {
 
+    private lateinit var binding: FragmentCardsBinding
 
     override fun onCreateView(
-        inflater: LayoutInflater , container: ViewGroup? ,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cards , container , false)
+        binding = FragmentCardsBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
 }
