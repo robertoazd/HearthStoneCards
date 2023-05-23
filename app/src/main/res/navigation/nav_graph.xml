@@ -9,7 +9,11 @@
         android:id="@+id/cardsFragment"
         android:name="com.robertoazeredo.hearthstonecardsgit.ui.view.CardsFragment"
         android:label="fragment_cards"
-        tools:layout="@layout/fragment_cards" />
+        tools:layout="@layout/fragment_cards" >
+        <action
+            android:id="@+id/action_cardsFragment_to_cardDetailFragment"
+            app:destination="@id/cardDetailFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/cardDetailFragment"
