@@ -10,4 +10,11 @@
         android:name="com.robertoazeredo.hearthstonecardsgit.ui.view.CardsFragment"
         android:label="fragment_cards"
         tools:layout="@layout/fragment_cards" />
+
+    <fragment
+        android:id="@+id/cardDetailFragment"
+        android:name="com.robertoazeredo.hearthstonecardsgit.ui.view.CardDetailFragment"
+        android:label="fragment_card_detail"
+        tools:layout="@layout/fragment_card_detail" />
+
 </navigation>
