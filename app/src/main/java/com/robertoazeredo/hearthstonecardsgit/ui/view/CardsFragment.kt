@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.viewModels
 import com.robertoazeredo.hearthstonecardsgit.databinding.FragmentCardsBinding
+import com.robertoazeredo.hearthstonecardsgit.ui.adapter.CardsAdapter
 import com.robertoazeredo.hearthstonecardsgit.ui.viewmodel.CardsViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -16,6 +17,10 @@ class CardsFragment : Fragment() {
 
     private lateinit var binding: FragmentCardsBinding
     private val viewModel: CardsViewModel by viewModels()
+
+    private val adapter by lazy {
+        CardsAdapter()
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -38,7 +43,7 @@ class CardsFragment : Fragment() {
     private fun setupObservables() {
         viewModel.cards.observe(viewLifecycleOwner) { cards ->
             if (!cards.isNullOrEmpty()) {
-                println("Adapter")
+                adapter.insertCards(cards)
             } else {
                 Toast.makeText(context, "Lista vazia", Toast.LENGTH_SHORT).show()
             }
