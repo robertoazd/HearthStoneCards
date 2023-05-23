@@ -31,7 +31,24 @@ class CardsFragment : Fragment() {
         if (viewModel.cards.value == null) {
             viewModel.getCards()
         }
+
+        setupObservables()
     }
 
-    
+    private fun setupObservables() {
+        viewModel.cards.observe(viewLifecycleOwner) { cards ->
+            if (!cards.isNullOrEmpty()) {
+                println("Adapter")
+            } else {
+                Toast.makeText(context, "Lista vazia", Toast.LENGTH_SHORT).show()
+            }
+            binding.progressBar.visibility = View.INVISIBLE
+        }
+
+        viewModel.error.observe(viewLifecycleOwner) { error ->
+            Toast.makeText(context, error, Toast.LENGTH_SHORT).show()
+
+            binding.progressBar.visibility = View.INVISIBLE
+        }
+    }
 }
