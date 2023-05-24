@@ -55,7 +55,7 @@ class CardsFragment : Fragment() {
     private fun setupListeners() {
         adapter.itemClick = { card ->
                findNavController().navigate(
-                   CardsFragmentDirections.actionCardsFragmentToCardDetailFragment()
+                   CardsFragmentDirections.actionCardsFragmentToCardDetailFragment(card)
                )
             }
     }
