@@ -1,14 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.view.CardDetailFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/iv_card"
+            android:layout_width="250dp"
+            android:layout_height="350dp"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/iv_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Name" />
+
+        <TextView
+            android:id="@+id/tv_flavor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            app:layout_constraintEnd_toEndOf="@id/tv_name"
+            app:layout_constraintStart_toStartOf="@id/tv_name"
+            tools:text="Flavor" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_flavor"
+            app:layout_constraintEnd_toEndOf="@id/tv_flavor"
+            app:layout_constraintStart_toStartOf="@id/tv_flavor"
+            tools:text="Text" />
+
+        <TextView
+            android:id="@+id/tv_cardSet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_text"
+            app:layout_constraintEnd_toEndOf="@id/tv_text"
+            app:layout_constraintStart_toStartOf="@id/tv_text"
+            tools:text="CardSet" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_cardSet"
+            app:layout_constraintEnd_toEndOf="@id/tv_cardSet"
+            app:layout_constraintStart_toStartOf="@id/tv_cardSet"
+            tools:text="Type" />
+
+        <TextView
+            android:id="@+id/tv_faction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_type"
+            app:layout_constraintEnd_toEndOf="@id/tv_type"
+            app:layout_constraintStart_toStartOf="@id/tv_type"
+            tools:text="Faction" />
+
+        <TextView
+            android:id="@+id/tv_rarity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_faction"
+            app:layout_constraintEnd_toEndOf="@id/tv_faction"
+            app:layout_constraintStart_toStartOf="@id/tv_faction"
+            tools:text="Rarity" />
+
+        <TextView
+            android:id="@+id/tv_attack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_rarity"
+            app:layout_constraintEnd_toEndOf="@id/tv_rarity"
+            app:layout_constraintStart_toStartOf="@id/tv_rarity"
+            tools:text="Attack" />
+
+        <TextView
+            android:id="@+id/tv_cost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_attack"
+            app:layout_constraintEnd_toEndOf="@id/tv_attack"
+            app:layout_constraintStart_toStartOf="@id/tv_attack"
+            tools:text="Cost" />
+
+        <TextView
+            android:id="@+id/tv_health"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_cost"
+            app:layout_constraintEnd_toEndOf="@id/tv_cost"
+            app:layout_constraintStart_toStartOf="@id/tv_cost"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="Health" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
