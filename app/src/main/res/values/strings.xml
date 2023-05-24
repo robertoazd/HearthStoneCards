@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">HearthStone Cards Git</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="name_format">Nome: %s</string>
+    <string name="flavor_format">Flavor: %s</string>
+    <string name="text_format">Texto: %s</string>
+    <string name="cardSet_format">CardSet: %s</string>
+    <string name="type_format">Tipo: %s</string>
+    <string name="faction_format">Facção: %s</string>
+    <string name="rarity_format">Raridade: %s</string>
+    <string name="attack_format">Ataque: %s</string>
+    <string name="cost_format">Custo: %s</string>
+    <string name="health_format">Saude: %s</string>
 </resources>
