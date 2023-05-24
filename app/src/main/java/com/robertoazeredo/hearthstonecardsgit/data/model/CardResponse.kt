@@ -1,7 +1,10 @@
 package com.robertoazeredo.hearthstonecardsgit.data.model
 
+import android.os.Parcelable
 import com.squareup.moshi.Json
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 data class CardResponse(
 
     @Json(name = "img")
@@ -26,4 +29,4 @@ data class CardResponse(
     val cost: Int?,
     @Json(name = "health")
     val health: Int?
-)
+) : Parcelable
