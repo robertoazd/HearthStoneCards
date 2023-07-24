@@ -1,4 +1,4 @@
-package com.robertoazeredo.hearthstonecardsgit.data.api
+package com.robertoazeredo.hearthstonecards.data.api
 
 sealed class ResultApi<out T> {
     data class Success<out T>(val value: T): ResultApi<T>()

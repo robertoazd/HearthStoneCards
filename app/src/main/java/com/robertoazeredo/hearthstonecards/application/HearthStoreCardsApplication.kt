@@ -1,4 +1,4 @@
-package com.robertoazeredo.hearthstonecardsgit.application
+package com.robertoazeredo.hearthstonecards.application
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

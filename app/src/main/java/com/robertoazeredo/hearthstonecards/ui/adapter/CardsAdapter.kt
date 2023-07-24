@@ -1,11 +1,11 @@
-package com.robertoazeredo.hearthstonecardsgit.ui.adapter
+package com.robertoazeredo.hearthstonecards.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.robertoazeredo.hearthstonecardsgit.data.model.CardResponse
-import com.robertoazeredo.hearthstonecardsgit.databinding.ItemCardBinding
+import com.robertoazeredo.hearthstonecards.data.model.CardResponse
+import com.robertoazeredo.hearthstonecards.databinding.ItemCardBinding
 
 class CardsAdapter(
     var itemClick: (card: CardResponse) -> Unit = {}

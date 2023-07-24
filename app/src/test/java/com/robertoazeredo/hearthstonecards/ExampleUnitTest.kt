@@ -1,4 +1,4 @@
-package com.robertoazeredo.hearthstonecardsgit
+package com.robertoazeredo.hearthstonecards
 
 import org.junit.Test
 

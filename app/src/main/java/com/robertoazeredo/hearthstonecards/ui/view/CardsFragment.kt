@@ -1,4 +1,4 @@
-package com.robertoazeredo.hearthstonecardsgit.ui.view
+package com.robertoazeredo.hearthstonecards.ui.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,9 +10,9 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.SnapHelper
-import com.robertoazeredo.hearthstonecardsgit.databinding.FragmentCardsBinding
-import com.robertoazeredo.hearthstonecardsgit.ui.adapter.CardsAdapter
-import com.robertoazeredo.hearthstonecardsgit.ui.viewmodel.CardsViewModel
+import com.robertoazeredo.hearthstonecards.databinding.FragmentCardsBinding
+import com.robertoazeredo.hearthstonecards.ui.adapter.CardsAdapter
+import com.robertoazeredo.hearthstonecards.ui.viewmodel.CardsViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

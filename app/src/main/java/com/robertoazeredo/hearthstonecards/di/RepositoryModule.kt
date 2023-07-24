@@ -1,7 +1,7 @@
-package com.robertoazeredo.hearthstonecardsgit.di
+package com.robertoazeredo.hearthstonecards.di
 
-import com.robertoazeredo.hearthstonecardsgit.data.repository.CardsRepository
-import com.robertoazeredo.hearthstonecardsgit.data.repository.CardsRepositoryImpl
+import com.robertoazeredo.hearthstonecards.data.repository.CardsRepository
+import com.robertoazeredo.hearthstonecards.data.repository.CardsRepositoryImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

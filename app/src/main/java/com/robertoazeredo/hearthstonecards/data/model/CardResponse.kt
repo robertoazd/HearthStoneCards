@@ -1,4 +1,4 @@
-package com.robertoazeredo.hearthstonecardsgit.data.model
+package com.robertoazeredo.hearthstonecards.data.model
 
 import android.os.Parcelable
 import com.squareup.moshi.Json

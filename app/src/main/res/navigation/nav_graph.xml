@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/cardsFragment"
-        android:name="com.robertoazeredo.hearthstonecardsgit.ui.view.CardsFragment"
+        android:name="com.robertoazeredo.hearthstonecards.ui.view.CardsFragment"
         android:label="fragment_cards"
         tools:layout="@layout/fragment_cards" >
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/cardDetailFragment"
-        android:name="com.robertoazeredo.hearthstonecardsgit.ui.view.CardDetailFragment"
+        android:name="com.robertoazeredo.hearthstonecards.ui.view.CardDetailFragment"
         android:label="fragment_card_detail"
         tools:layout="@layout/fragment_card_detail" >
         <argument

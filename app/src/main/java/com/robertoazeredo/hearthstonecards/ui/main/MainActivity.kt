@@ -1,9 +1,9 @@
-package com.robertoazeredo.hearthstonecardsgit.ui.main
+package com.robertoazeredo.hearthstonecards.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
-import com.robertoazeredo.hearthstonecardsgit.databinding.ActivityMainBinding
+import com.robertoazeredo.hearthstonecards.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

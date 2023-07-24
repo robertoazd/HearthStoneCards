@@ -1,12 +1,12 @@
-package com.robertoazeredo.hearthstonecardsgit.ui.viewmodel
+package com.robertoazeredo.hearthstonecards.ui.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.robertoazeredo.hearthstonecardsgit.data.api.ResultApi
-import com.robertoazeredo.hearthstonecardsgit.data.model.CardResponse
-import com.robertoazeredo.hearthstonecardsgit.data.repository.CardsRepository
+import com.robertoazeredo.hearthstonecards.data.api.ResultApi
+import com.robertoazeredo.hearthstonecards.data.model.CardResponse
+import com.robertoazeredo.hearthstonecards.data.repository.CardsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

@@ -1,4 +1,4 @@
-package com.robertoazeredo.hearthstonecardsgit.ui.view
+package com.robertoazeredo.hearthstonecards.ui.view
 
 import android.os.Build
 import android.os.Bundle
@@ -9,9 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
-import com.robertoazeredo.hearthstonecardsgit.R
-import com.robertoazeredo.hearthstonecardsgit.databinding.FragmentCardDetailBinding
-import kotlin.contracts.contract
+import com.robertoazeredo.hearthstonecards.R
+import com.robertoazeredo.hearthstonecards.databinding.FragmentCardDetailBinding
 
 class CardDetailFragment : Fragment() {
 

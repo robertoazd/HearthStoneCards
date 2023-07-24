@@ -1,8 +1,8 @@
-package com.robertoazeredo.hearthstonecardsgit.data.repository
+package com.robertoazeredo.hearthstonecards.data.repository
 
-import com.robertoazeredo.hearthstonecardsgit.data.api.CardSetApi
-import com.robertoazeredo.hearthstonecardsgit.data.api.ResultApi
-import com.robertoazeredo.hearthstonecardsgit.data.model.CardResponse
+import com.robertoazeredo.hearthstonecards.data.api.CardSetApi
+import com.robertoazeredo.hearthstonecards.data.api.ResultApi
+import com.robertoazeredo.hearthstonecards.data.model.CardResponse
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject

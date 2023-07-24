@@ -1,6 +1,6 @@
-package com.robertoazeredo.hearthstonecardsgit.data.api
+package com.robertoazeredo.hearthstonecards.data.api
 
-import com.robertoazeredo.hearthstonecardsgit.data.model.CardResponse
+import com.robertoazeredo.hearthstonecards.data.model.CardResponse
 import retrofit2.Response
 import retrofit2.http.GET
 

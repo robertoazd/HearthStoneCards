@@ -1,7 +1,7 @@
-package com.robertoazeredo.hearthstonecardsgit.di
+package com.robertoazeredo.hearthstonecards.di
 
-import com.robertoazeredo.hearthstonecardsgit.BuildConfig
-import com.robertoazeredo.hearthstonecardsgit.data.api.CardSetApi
+import com.robertoazeredo.hearthstonecards.BuildConfig
+import com.robertoazeredo.hearthstonecards.data.api.CardSetApi
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
