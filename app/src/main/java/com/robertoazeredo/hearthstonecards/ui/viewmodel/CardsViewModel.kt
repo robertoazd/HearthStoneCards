@@ -26,12 +26,22 @@ class CardsViewModel @Inject constructor(
         viewModelScope.launch {
             when (val resultApi = cardsRepository.getCards()) {
                 is ResultApi.Success -> {
-                    _cards.value = resultApi.value
+                    _cards.value = getCardsWithImage(resultApi.value)
                 }
                 is ResultApi.Error -> {
                     _error.value = resultApi.message
                 }
             }
         }
+    }
+
+    private fun getCardsWithImage(cards: List<CardResponse>) : List<CardResponse> {
+        val cardsWithImage = arrayListOf<CardResponse>()
+        cards.forEach { card ->
+            if (card.imageCard != null) {
+                cardsWithImage.add(card)
+            }
+        }
+        return cardsWithImage
     }
 }
