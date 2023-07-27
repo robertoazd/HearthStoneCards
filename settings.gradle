@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "HearthStone Cards Git"
+rootProject.name = "HearthStone Cards"
 include ':app'

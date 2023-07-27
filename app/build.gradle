@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace 'com.robertoazeredo.hearthstonecardsgit'
+    namespace 'com.robertoazeredo.hearthstonecards'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.robertoazeredo.hearthstonecardsgit"
+        applicationId "com.robertoazeredo.hearthstonecards"
         minSdk 21
         targetSdk 33
         versionCode 1

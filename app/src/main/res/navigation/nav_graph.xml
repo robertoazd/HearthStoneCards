@@ -22,7 +22,7 @@
         tools:layout="@layout/fragment_card_detail" >
         <argument
             android:name="card"
-            app:argType="com.robertoazeredo.hearthstonecardsgit.data.model.CardResponse" />
+            app:argType="com.robertoazeredo.hearthstonecards.data.model.CardResponse" />
     </fragment>
 
 </navigation>
