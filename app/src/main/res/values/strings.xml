@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HearthStone Cards Git</string>
+    <string name="app_name">HearthStone Cards</string>
     <!-- TODO: Remove or change this placeholder text -->
 
     <string name="name_format">Nome: %s</string>
